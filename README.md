@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Projeto de Listagem e Combate de Heróis
+Este projeto é uma aplicação web que permite listar heróis, filtrar heróis por nome e realizar combates simples entre eles.
 
-## Getting Started
+## Conteúdo do Projeto
+O projeto contém as seguintes funcionalidades:
 
-First, run the development server:
+Listagem de Heróis: Exibe uma lista de heróis com informações detalhadas.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Filtro de Heróis: Permite filtrar heróis pelo nome no canto superior direito da página.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Sistema de Combate: Permite ao usuário selecionar dois heróis e iniciar um combate. Um modal será exibido informando o vencedor, que é determinado com base no somatório das "powerstats".
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Tecnologias e Bibliotecas Utilizadas
+O projeto foi desenvolvido utilizando as seguintes tecnologias e bibliotecas:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Next.js: Framework React para renderização no lado do servidor (SSR).
+Axios: Cliente HTTP para fazer solicitações à API de heróis.
+Material-UI: Uma biblioteca de componentes de interface do usuário para React.
+Gerenciamento Global com React Context: Usado para o gerenciamento de estado global na aplicação.
 
-## Learn More
+## Passo-a-Passo para Executar o Projeto
+Siga as etapas abaixo para executar o projeto em seu ambiente local:
 
-To learn more about Next.js, take a look at the following resources:
+Clone o repositório:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+>git clone https://github.com/guilhermeabraao/jornada-do-heroi.git
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Acesse a pasta do projeto:
 
-## Deploy on Vercel
+>cd seuprojeto
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Instale as dependências:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Certifique-se de ter o Node.js instalado em seu sistema. Em seguida, execute o seguinte comando para instalar as dependências do projeto:
+
+>npm install
+
+As variáveis de ambiente necessárias para rodar o projeto já se encontram configuradas no arquivo next.config.js.
+
+
+Execute o projeto:
+
+Uma vez que as dependências estão instaladas, você pode iniciar o projeto com o seguinte comando:
+
+>npm run dev
+
+Acesse o projeto:
+
+O projeto estará disponível em seu navegador em http://localhost:3000. Você pode acessar a aplicação web e começar a explorar as funcionalidades de listagem de heróis, filtro e sistema de combate.
+
+##
+Lembre-se de que você precisa ter acesso à internet para buscar informações sobre heróis na API configurada. Certifique-se de que suas variáveis de ambiente estão configuradas corretamente.
+
+Aproveite o projeto!
